@@ -1,0 +1,179 @@
+
+
+body{
+    background-color: #131313;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    position: absolute;
+    left: 27%;
+    top: 0;
+    padding: 10px;
+    border-radius: 0px 0px 30px 30px;
+    background-color: #000;
+    
+}
+
+.head button{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1em;  
+    border: none;
+    padding: 15px 25px;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+.head button:active{
+    border: solid 1px #fff;
+}
+.head:hover{
+    background-color: #000;
+}
+
+.head button:hover{
+    border-radius: 10px;
+    border: 3px solid green;
+}
+
+.h1, .clock{
+    position: absolute;
+    left: 40%;
+    top: 12%;
+    color: green;
+    text-decoration: underline;
+    font-size: 5em;
+    cursor: default;
+   
+}
+.SW{margin-left: -10%;}
+.stopwatch{ margin-left: 5%;}
+
+.clock, .timer{
+    display: flex;
+    font-size: 7.3em;
+    text-decoration: none;
+    left: 33%;
+    top: 35%;
+}
+.timer{ left: 38%;}
+
+.ctrl{
+    position:absolute;
+    left: 37%;
+    top: 85%;
+}
+
+.start:hover{transform: scale(1.1);}
+.reset:hover{transform: scale(1.1);}
+.stop:hover{transform: scale(1.1);}
+
+.start:active{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.stop:active{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.reset:active{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.ctrl button{
+    background-color: #000;
+    border: 2px solid green;
+    color: green;
+    padding: 15px 20px;
+    margin: 5px;
+}
+
+.ctrl .st{margin-left: 100px;}
+
+.add{
+    color: green;
+    font-size: 7em;
+    position: absolute;
+    left: 48%;
+    top: 60%;
+    cursor: pointer;
+    /* display: none; */
+}
+.add:hover{
+    border: solid green 2px;
+    border-radius: 50px;
+}
+.input-heading{
+    color: rgb(0, 111, 0);
+}
+.inputs{
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    display: none;
+}
+.input-values input {
+    width: 150px;
+}
+input{
+    background-color: rgb(13,13,13);
+    color: #fff;
+    display: block;
+    padding: 15px;
+    margin: 7px;
+    border: solid 2px #0f0f0f;
+    outline: none;
+    margin-left: 100px;
+}
+input::selection{
+    background-color: rgb(0, 110, 0);
+}
+input:focus {
+    border: 2px solid green;
+}
+.ctrl .set-btn{ margin-top: 60px; } 
+.set-btn:hover{ transform: scale(1.1) ; }
+.set-btn:active{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.alarms{
+    position: absolute;
+    color: #fff;
+    left: 32%;
+    top: 52%;
+    display: none;
+}
+
+.alarm{
+    display: grid;
+    gap: 15%;
+    width: 450px;
+    height: 50px;
+    
+}
+
+.time{
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 100px;
+    display: flex;
+}
+
+.time p {
+    position: relative;
+    left: 2%;
+    margin-left: 3px;
+    padding: 2px;
+}
+
+.sun , .moon{
+    position: absolute;
+    fill: #fff;
+    left: 90%;
+}
